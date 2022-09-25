@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>FAQ Accordion Card</title>
+  </head>
+  <body
+    class="bg-gradient-to-bl from-svilt to-sblu w-[100%] min-h-screen flex items-center justify-center py-36"
+  >
+    <main
+      class="max-w-[350px] w-[90%] bg-white rounded-3xl mx-auto grid items-center gap-8 md:grid-cols-2 md:p-8 md:max-w-[1180px] md:w-[70%] md:h-[calc(40vh+10vw)]"
+    >
+      <!-- Header img -->
+      <object class="w-[70%] mx-auto relative md:w-[100%]" data="" type="">
+        <img
+          class="w-[100%] absolute bottom-8 left-0 md:hidden"
+          src="images/illustration-woman-online-mobile.svg"
+          alt=""
+        />
+        <img
+          class="w-[100%] hidden md:block absolute top-[50%] left-[50%] translate-x-[-70%] translate-y-[-60%]"
+          src="images/illustration-woman-online-desktop.svg"
+          alt=""
+        />
+        <img class="w-[100%] md:hidden" src="images/bg-pattern-mobile.svg" alt="" />
+        <img
+          class="hidden md:block absolute top-[50%] left-[50%] translate-x-[-70%] translate-y-[-50%]"
+          src="images/bg-pattern-desktop.svg"
+          alt=""
+        />
+      </object>
+
+      <!-- Article -->
+      <article class="font-kumbh">
+        <h1 class="text-center font-bold text-[24px] md:text-left">FAQ</h1>
+        <ul class="p-4 text-[12px] lg:text-[15px] unorder md:p-0 md:py-4">
+          <li class="border-b-[1px] py-2 transition-all duration-500">
+            <p class="flex items-center justify-between">
+              How many team members can I invite?
+              <img
+                class="cursor-pointer"
+                src="images/icon-arrow-down.svg"
+                alt=""
+                onclick="openPara(0)"
+              />
+            </p>
+            <p class="hidden para">
+              You can invite up to 2 additional users on the Free plan. There is no limit
+              on team members for the Premium plan.
+            </p>
+          </li>
+          <li class="border-b-[1px] py-2">
+            <p class="flex items-center justify-between">
+              What is the maximum file upload size?
+              <img
+                class="cursor-pointer"
+                src="images/icon-arrow-down.svg"
+                alt=""
+                onclick="openPara(1)"
+              />
+            </p>
+            <p class="hidden para">
+              No more than 2GB. All files in your account must fit your allotted storage
+              space.
+            </p>
+          </li>
+          <li class="border-b-[1px] py-2">
+            <p class="flex items-center justify-between">
+              How do I reset my password?
+              <img
+                class="cursor-pointer"
+                src="images/icon-arrow-down.svg"
+                alt=""
+                onclick="openPara(2)"
+              />
+            </p>
+            <p class="hidden para">
+              Click “Forgot password” from the login page or “Change password” from your
+              profile page. A reset link will be emailed to you.
+            </p>
+          </li>
+          <li class="border-b-[1px] py-2">
+            <p class="flex items-center justify-between">
+              Can I cancel my subscription?
+              <img
+                class="cursor-pointer"
+                src="images/icon-arrow-down.svg"
+                alt=""
+                onclick="openPara(3)"
+              />
+            </p>
+            <p class="hidden para">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </p>
+          </li>
+          <li class="border-b-[1px] py-2">
+            <p class="flex items-center justify-between">
+              Do you provide additional support?
+              <img
+                class="cursor-pointer"
+                src="images/icon-arrow-down.svg"
+                alt=""
+                onclick="openPara(4)"
+              />
+            </p>
+            <p class="hidden para">
+              Chat and email support is available 24/7. Phone lines are open during normal
+              business hours.
+            </p>
+          </li>
+        </ul>
+      </article>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
